@@ -1,218 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with Meyawo landing page.">
-    <meta name="author" content="Devcrud">
-    <title>dev_prynk</title>
-    <!-- font icons -->
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <!-- Bootstrap + Meyawo main styles -->
-	<link rel="stylesheet" href="assets/css/meyawo.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap"
+          rel="stylesheet">
+
+    <!-- JavaScript Libraries -->
+    <script src="https://unpkg.com/sweet-scroll/sweet-scroll.min.js"></script>
+
+    <!-- CSS & JS -->
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./index.js" defer></script>
+
+    <!-- Meta Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="100% FREE Professional Portfolio Templates - Plain Template"/>
+    <meta name="keywords" content="OSSPH, Free portfolio"/>
+    <title> dev_prynk | Python</title>
+
+    <!-- Icons -->
+    <link rel="icon" href="./favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/icons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/icons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/icons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/icons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/icons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/icons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/icons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/icons/apple-touch-icon-57x57.png">
+    
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-
-    <!-- Page Navbar -->
-    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
-        <div class="container">
-            <a class="logo" href="#">P R Y N K</a>         
-            <ul class="nav">
-                <li class="item">
-                    <a class="link" href="#home">Home</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#about">About</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#portfolio">Portfolio</a>
-                </li>             
-                <li class="item ml-md-3">
-                    <a href="#connect" class="btn btn-primary">Connect</a>
-                </li>
-            </ul>
-            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
-                <div class="hamburger-box">
-                  <div class="hamburger-inner"></div>
-                </div>
-            </a>
-        </div>          
-    </nav><!-- End of Page Navbar -->
-
-    <!-- page header -->
-    <header id="home" class="header">
-        <div class="overlay"></div>
-        <div class="header-content container">
-            <h1 class="header-title">
-                <span class="up">HI!</span>
-                <span class="down">I am Priyank</span>
-            </h1>
-            <p class="header-subtitle">Backend Developer</p>            
-
-            <button class="btn btn-primary" href="#portfolio">Visit My Works</button>
-        </div>              
-    </header><!-- end of page header -->
-
-    <!-- about section -->
-    <section class="section pt-0" id="about">
-        <!-- container -->
-        <div class="container text-center">
-            <!-- about wrapper -->
-            <div class="about">
-                <div class="about-img-holder">
-                    <img src="assets/imgs/man.png" class="about-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                </div>
-                <div class="about-caption">
-                    <p class="section-subtitle">Who Am I ?</p>
-                    <h2 class="section-title mb-3">About Me</h2>
-                    <p>
-                        I'm a passionate Python developer with over all years of professional experience crafting robust solutions for web scraping, API development, and AWS integrations.
-                        <br>My expertise spans across various industries and projects, from e-commerce analytics to data-driven applications.
-                    </p>
-                    <a href="assets/imgs/Priyank_Suthar.pdf" download>
-                        <button class="btn-rounded btn btn-outline-primary mt-4">Download CV</button>
-                    </a>
-                </div>              
-            </div><!-- end of about wrapper -->
-        </div><!-- end of container -->
-    </section> <!-- end of about section -->
-
-    <!-- service section -->
-    <section class="section" id="service">
-        <div class="container text-center">
-            <p class="section-subtitle">What I Do ?</p>
-            <h6 class="section-title mb-6">Service</h6>
-            <!-- row -->
-            <div class="row">
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/pencil-case.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
-                            <h6 class="title">API Development & Integration</h6>
-                            <p class="subtitle">Proficient in building scalable APIs using Django REST Framework (DRF) and FastAPI.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/responsive.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
-                            <h6 class="title">Web Scraping & Data Automation</h6>
-                            <p class="subtitle">Handled 50+ web scraping projects with data automation expertise.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/toolbox.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
-                            <h6 class="title">AWS Cloud Solutions</h6>
-                            <p class="subtitle">Skilled in leveraging AWS Lambda, EC2, RDS, and Aurora for serverless, scalable, and reliable solutions.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/analytics.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
-                            <h6 class="title">Custom Software Development</h6>
-                            <p class="subtitle">Delivered solutions like image manipulation, enterprise data pipelines and more.</p>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- end of row -->
-        </div>
-    </section><!-- end of service section -->
-
-    <!-- portfolio section -->
-    <section class="section" id="portfolio">
-        <div class="container text-center">
-            <p class="section-subtitle">Why ?</p>
-            <h6 class="section-title mb-6">Work With Me?</h6>
-            <!-- row -->
-            <div class="row">
-                <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img src="assets/imgs/amazon.jpg" class="portfolio-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>Expert in Amazon API Integration Specialist</h5>
-                                <p class="font-weight-normal">
-                                    Integrated Amazon Reports (Selling Partner API, Advertising API, Catalog API) to enhance data analytics capabilities.</p>
-                            </span>                         
-                        </span>                     
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/time.jpg" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>Timely Delivery</h5>
-                                <p class="font-weight-normal">Managed multiple automated projects, ensuring on-time results for data delivery.</p>
-                            </span>                         
-                        </span>                         
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/folio-3.jpg" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>Versatile Experience</h5>
-                                <p class="font-weight-normal">Successfully worked on projects ranging from small startups to large-scale enterprise applications.</p>
-                            </span>                         
-                        </span>                     
-                    </a>
-                </div>
-            </div><!-- end of row -->
-        </div><!-- end of container -->
-    </section> <!-- end of portfolio section -->
-
-
-    <!-- section -->
-    <section class="section-sm bg-primary">
-        <!-- container -->
-        <div class="container text-center text-sm-left">
-            <!-- row -->
-            <div class="row align-items-center">
-                <div class="col-sm offset-md-1 mb-4 mb-md-0">
-                    <h6 class="title text-light">Want to work with me?</h6>
-                    <p class="m-0 text-light">Always feel Free to Contact & Hire me</p>
-                </div>
-                <div class="col-sm offset-sm-2 offset-md-3">
-                    <a href="mailto:priyanksuthar21@gmail.com">
-                        <button class="btn btn-lg my-font btn-light rounded">Hire Me</button>
-                    </a>
-                </div>
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </section> <!-- end of section -->
-
-    <!-- footer -->
-    <div class="container" id="connect">
-        <footer class="footer">       
-            <p class="mb-0">Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a href="http://www.devcrud.com">dev_prynk</a></p>
-            <div class="social-links text-right m-auto ml-sm-auto">
-                <!-- <a href="javascript:void(0)" class="link"><i class="ti-facebook"></i></a> -->
-                <!-- <a href="javascript:void(0)" class="link"><i class="ti-twitter-alt"></i></a> -->
-                <a href="mailto:priyanksuthar21@gmail.com" class="link"><i class="ti-google"></i></a>
-                <a href="https://www.linkedin.com/in/priyank-suthar-a337b5201" class="link" target="_blank"><i class="ti-linkedin"></i></a>
-                <a href="https://github.com/dev-prynk" class="link" target="_blank"><i class="ti-github"></i></a>
-                <a href="https://www.instagram.com/_priyank.suthar" class="link"><i class="ti-instagram"></i></a>
+<body>
+<main>
+    <!-- Hero Header -->
+    <header id="heroHeader" class="hero-header">
+        <nav id="navBar" class="nav">
+            <div class="container">
+                <button type="button" id="hamburgerBtn" class="nav__hamburger-btn">
+                    <span class="nav__hamburger-top"></span>
+                    <span class="nav__hamburger-center"></span>
+                    <span class="nav__hamburger-bottom"></span>
+                </button>
+                <ul id="navList" class="nav__list">
+                    <li class="nav__list-item">
+                        <a class="nav__list-link active" href="#heroHeader">&lt;Home &sol;&gt;</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a class="nav__list-link" href="#services">&lt;Services &sol;&gt;</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a class="nav__list-link" href="#works">&lt;Works &sol;&gt;</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a class="nav__list-link" href="#contact">&lt;Contact &sol;&gt;</a>
+                    </li>
+                </ul>
             </div>
-        </footer>
-    </div> <!-- end of page footer -->
-	
-	<!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+        </nav>
+        <section class="header__container container">
+            <div class="header__left">
+                <!-- <span class="header__sup-text">Hello There! I am <span class="header__title-1" data-role="Priyank"> Priyank Suthar</span></span>                                 -->
+                <span class="header__sup-text"></span><p>Hello There! I am <span class="header__title-1" data-role="Priyank" style="font-size: 32px; font-weight: bold;">Priyank Suthar</span>as a</p></span>
 
-    <!-- bootstrap 3 affix -->
-	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+                <h1 class="header__title">
+                    <span class="header__title-1" >Python</span>
+                    <span class="header__title-2" data-role="DEVELOPER">Developer</span>
+                </h1>
+                <p class="header__msg">Professional experience crafting robust solutions for web scraping, API development, and AWS integrations. My expertise spans across various industries and projects, from e-commerce analytics to data-driven applications.</p>
+                <a href="./assets/resume/Priyank_Suthar.pdf" class="header__resume">Resume</a>
+            </div>
+            <div class="header__right">
+                <img src="./assets/illustrations/header.svg" alt="Header section illustration"/>
+            </div>
+        </section>
+        <span class="header__bg"></span>
+    </header>
 
-    <!-- Meyawo js -->
-    <script src="assets/js/meyawo.js"></script>
+    <!-- Services -->
+    <section id="services" class="section container">
+        <h2 class="section__title">Services</h2>
 
+        <div class="service-cards">
+            <article class="service-card__box">
+                <span class="service-card__illustration">
+                    <img src="./assets/services/support.svg" alt="Support Illustration"/>
+                </span>
+                <h3 class="service-card__title">Amazon SP-API & API Integration Specialist</h3>
+                <p class="service-card__msg"> Proficient in integrating Amazon Selling Partner, Advertising, and other APIs, utilizing AWS services (Lambda, EC2, RDS, Aurora) to create scalable, efficient, and automated solutions.</p>
+                <span class="service-card__bg"></span>
+            </article>
+            <article class="service-card__box">
+                <span class="service-card__illustration">
+                    <img src="./assets/services/design.svg" alt="Design Illustration"/>
+                </span>
+                <h3 class="service-card__title">Web Scraping & Data Automation Specialist</h3>
+                <p class="service-card__msg">Pioneering advanced data extraction and automation with expertise in Pandas, Scrapy, Playwright, and Selenium, driving innovation in large-scale web scraping solutions.</p>
+                <span class="service-card__bg"></span>
+            </article>
+            <article class="service-card__box">
+                <span class="service-card__illustration">
+                    <img src="./assets/services/developing.svg" alt="Deploy Illustration"/>
+                </span>
+                <h3 class="service-card__title">Custom Software & API Specialist</h3>
+                <p class="service-card__msg"> Expert in delivering tailored solutions like image manipulation, PDF to Word conversion, and data pipelines. Skilled in building scalable APIs with Django REST Framework for efficient integration.</p>
+                <span class="service-card__bg"></span>
+            </article>
+        </div>
+    </section>
+
+    <!-- Sample Works -->
+    <section id="works" class="section container">
+        <h2 class="section__title">My Works</h2>
+        <div class="works">
+            <article class="work">
+                <div class="work__box">
+                    <span class="work__img-box">
+                    <img src="./assets/works/Amazon.png" alt="My Work 1"/>
+                </span>
+                    <h3 class="work__title">E-Commerce Scraping & Categorization</h3>
+                    <span class="work__badges">
+                    <span class="work__badge">Python</span>
+                    <span class="work__badge">Pandas</span>
+                    <span class="work__badge">Scrapy</span>
+                </span>
+                </div>
+            </article>
+            <article class="work">
+                <div class="work__box">
+                    <span class="work__img-box">
+                    <img src="./assets/works/python.png" alt="My Work 1"/>
+                </span>
+                    <h3 class="work__title">DRF & FastAPI in Analytics Projects</h3>
+                    <span class="work__badges">
+                    <span class="work__badge">Python</span>
+                    <span class="work__badge">Django</span>
+                    <span class="work__badge">FastAPI</span>
+                </span>
+                </div>
+            </article>
+            <article class="work">
+                <div class="work__box">
+                    <span class="work__img-box">
+                    <img src="./assets/works/finance.jpg" alt="My Work 1"/>
+                </span>
+                    <h3 class="work__title">Amazon SP-API & AD-API Integration</h3>
+                    <span class="work__badges">
+                    <span class="work__badge">AWS</span>
+                    <span class="work__badge">SP-AD Api</span>
+                    <span class="work__badge">RDS</span>
+                    <span class="work__badge">Lambda</span>
+                </span>
+                </div>
+            </article>
+            
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section container">
+        <h2 class="section__title">Let's Connect!</h2>
+        <div class="contact">
+            <form class="contact__form" id="contactForm">
+                <div class="contact__field-wrapper">
+                    <label for="contactNameTxt">Name:</label>
+                    <input id="contactNameTxt" type="text" placeholder="What's your name?" required />
+                </div>
+                <div class="contact__field-wrapper">
+                    <label for="contactDescriptionTxt">Message:</label>
+                    <textarea id="contactDescriptionTxt" placeholder="Let's connect!" required></textarea>
+                </div>
+    
+                <button type="submit" class="contact__submit-btn">Submit</button>
+            </form>
+            <span class="contact__illustration">
+                <img src="./assets/illustrations/connect.svg" alt="Group of people connecting with each other" />
+            </span>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+    
+            // Get the values from the form inputs
+            const name = document.getElementById('contactNameTxt').value;
+            const message = document.getElementById('contactDescriptionTxt').value;
+    
+            // Construct the mailto link
+            const mailtoLink = `mailto:priyanksuthar21@gmail.com?subject=New Message from Contact Form&body=Name: ${encodeURIComponent(name)}%0AMessage: ${encodeURIComponent(message)}`;
+    
+            // Redirect to the mailto link
+            window.location.href = mailtoLink;
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer class="footer">
+        Priyank Suthar</a>
+    </footer>
+</main>
 </body>
 </html>
