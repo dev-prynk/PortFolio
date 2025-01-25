@@ -1,28 +1,36 @@
 import React from 'react';
 import './Works.css';
 
+// {process.env.PUBLIC_URL + "/assets/pdf/Priyank_Suthar.pdf"} Car Wallpaper.png
 export default function Works() {
   const works = [
     {
       id: 1,
-      image: 'https://images.unsplash.com/photo-1552308995-2baac1ad5490?w=800&q=80', // Replace with your image path
-      title: 'Project Title 1',
-      description: 'A modern UI design showcasing creativity and technical expertise.',
-      tags: ['ReactJS', 'CSS', 'UI/UX'],
+      image: process.env.PUBLIC_URL + "/assets/images/Clinical_UI.png", // Replace with your image path
+      title: 'Clinical Website',
+      description: 'Design a modern UI to manage clinical information and designations, built with ReactJS, styled with CSS, and powered by FastAPI.',
+      tags: ['ReactJS', 'CSS', 'FASTAPI'],
     },
     {
       id: 2,
-      image: 'https://images.unsplash.com/photo-1552308995-2baac1ad5490?w=800&q=80g', // Replace with your image path
-      title: 'Project Title 2',
-      description: 'A scalable web scraping solution with intelligent automation.',
-      tags: ['Python', 'Web Scraping', 'Data Analysis'],
+      image: process.env.PUBLIC_URL + "/assets/images/Car Wallpaper.png", // Replace with your image path
+      title: 'CarHD Website',
+      description: 'Develop a responsive car wallpaper website using ReactJS, styled with CSS, powered by FastAPI, and backed by MongoDB.',
+      tags: ['ReactJS', 'CSS', 'FASTAPI', 'MongoDB'],
     },
     {
       id: 3,
-      image: 'https://images.unsplash.com/photo-1552308995-2baac1ad5490?w=100&q=10', // Replace with your image path
-      title: 'Project Title 3',
-      description: 'An innovative platform integrating FastAPI and MongoDB.',
-      tags: ['FastAPI', 'MongoDB', 'Backend'],
+      image: process.env.PUBLIC_URL + "/assets/images/EcomPages.jpg", // Replace with your image path
+      title: 'Ecom Web Scraping',
+      description: 'Create powerful backend solutions with Python, specializing in web scraping for e-commerce and other platforms like Amazon, Flipkart, UPS, BookMyShow and many more.',
+      tags: ['Python', 'Web Scraping', 'Backend'],
+    },
+    {
+      id: 4,
+      image: process.env.PUBLIC_URL + "/assets/images/Amazon.jpg", // Replace with your image path
+      title: 'Amazon Products Analyse Tool',
+      description: 'Build efficient tools using Python, Amazon SP APIs, Advertising APIs, and Finance APIs for e-commerce data analysis and streamlined backend solutions.',
+      tags: ['Python', 'Amazon SP Apis', 'Finance API', 'Amazon AD APIS','Backend'],
     },
   ];
 

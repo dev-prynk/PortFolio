@@ -30,7 +30,7 @@ export default function Contact() {
     const subject = `Message from ${name}`;
     const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
     
-    const mailtoLink = `mailto:priyanksuthar21@gmail.com.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailtoLink = `mailto:priyanksuthar21@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     
     // Open the mail client with the constructed link
     window.location.href = mailtoLink;
