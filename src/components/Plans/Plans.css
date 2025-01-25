@@ -1,0 +1,170 @@
+/* Background and text color for the whole container */
+.plans-container {
+    background-color: #121214; /* Dark background color */
+    border-radius: 20px;
+    margin: 10px;
+    text-align: center;
+    padding: 20px; 
+    font-family: 'Lexend', sans-serif; /* Use Lexend font */
+  }
+  
+  /* Styling for the header */
+  .plans-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .plans-header h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #6366f1, #f472b6, #7e22ce);
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .plans-header p {
+    color: #9ca3af;
+    max-width: 36rem;
+    margin: 0 auto;
+  }
+  
+  /* Category selector styles */
+  .category-selector {
+    display: flex;
+    gap: 1rem; /* Space between buttons */
+    justify-content: center; /* Center the buttons horizontally */
+    flex-wrap: wrap; /* Allow wrapping to the next row if necessary */
+    margin-bottom: 3rem;
+    padding: 0 1rem;
+}
+
+.category-button {
+    flex: 1 1 auto; /* Allow the buttons to size proportionally and wrap */
+    font-family: 'Lexend', sans-serif; /* Use Lexend font */
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: #18181b;
+    color: #d1d5db;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 1.125rem;
+    text-align: center;
+}
+
+.category-button.selected {
+    background: linear-gradient(to right, #6366f1, #f472b6, #7e22ce);
+    color: white;
+}
+
+.category-button:hover {
+    background-color: #27272a;
+}
+  
+  /* Plans grid layout */
+  .plans-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .plans-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .plans-grid {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  
+  /* Plan card styles */
+  .plan-card {
+    background-color: #18181b;
+    border-radius: 1rem;
+    padding: 2rem;
+    position: relative;
+    transition: transform 0.3s;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .plan-card:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Highlight popular plans */
+  .plan-card.popular {
+    border: 2px solid #6366f1;
+  }
+  
+  .plan-popular {
+    position: absolute;
+    top: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #6366f1;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+  }
+  
+  /* Plan details section */
+  .plan-details {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .plan-details h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #d1d5db;
+  }
+  
+  .plan-price {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  .plan-features {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Feature item styling */
+  .feature-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #d1d5db;
+    margin-bottom: 1rem;
+  }
+  
+  .check-icon {
+    color: #10b981;
+  }
+  
+  /* Button styling for "Get Started" */
+  .plan-button {
+    font-family: 'Lexend', sans-serif; /* Use Lexend font */
+    width: 100%;
+    padding: 1rem 2rem;
+    border: none; 
+    border-radius: 1.5rem;
+    background: linear-gradient(to right, #6366f1, #f472b6, #7e22ce);
+    color: white;
+    font-weight: 500;
+    transition: opacity 0.3s;
+    cursor: pointer;
+  }
+  
+  .plan-button:hover {
+    opacity: 0.9;
+  }
+  
+  

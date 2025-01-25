@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;700&display=swap');
+
+.header {
+  font-family: 'Lexend';
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  padding: 20px;
+  background-color: #000; /* Black background for the header */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  justify-items: center;
+}
+
+.portfolio-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff; /* White text */
+  margin: 0;
+  text-align: left; /* Align the title to the left */
+  padding-right: 25px; /* Optional: Padding to give a slight gap to the right */
+}
+
+.header-center {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.nav-links {  
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-links li {
+  font-size: 18px;
+}
+
+.nav-links a {
+  font-family: 'Lexend';
+  text-decoration: none;
+  color: #a1a1aa; /* Light gray text */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #1e90ff; /* Light blue highlight on hover */
+}
+
+.header-right {
+  font-family: 'Lexend';
+  display: flex;
+  gap: 10px; /* To add space between Hire Me and Menu Icon */
+  text-align: right; /* Align the title to the left */
+  padding-left: 95px; /* Optional: Padding to give a slight gap to the right */
+}
+
+/* Button styles */
+.theme-btn {
+  font-family: 'Lexend', sans-serif;
+  background: #000; /* Black background */
+  color: #fff; /* White text */
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid; /* Transparent border initially */
+  border-radius: 15px; /* Rounded corners */
+  padding: 12px 24px;
+  text-align: center;
+  text-transform: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  overflow: visible;
+  -webkit-transition: .3s;
+  transition: .3s;
+  position: relative;
+  z-index: 1; /* Ensure text is above the pseudo-element */
+}
+
+/* Gradient border effect using the pseudo-element */
+.theme-btn::before {  
+  position: absolute;    
+  border-radius: 15px; /* Matching the button's rounded corners */
+  background: transparent; /* Gradient border */
+  z-index: -1; /* Behind the button text */
+  transition: transform 0.3s ease;
+}
+
+/* Hover effects */
+.theme-btn:hover {
+  transform: scale(1.1); /* Slight zoom effect */
+  background: linear-gradient(to right, #6366f1, #ec4899, #a855f7);
+  border: 1px solid transparent; /* Make the border transparent initially */  
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Add shadow for emphasis */
+}
+
+.theme-btn:hover::before {
+  transform: scale(1.1); /* Slight zoom effect on the gradient */
+}
+
+.header {
+  transition: padding 0.3s ease, border-bottom 0.3s ease;
+}
+
+.header.scrolled {
+  padding: 10px 20px;
+  border-bottom: 1px solid #fff; /* White bottom border */
+  border-bottom-left-radius: 20px; /* Rounded bottom left corner */
+  border-bottom-right-radius: 20px; /* Rounded bottom right corner */
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* Mobile Menu */
+.nav-links-mobile {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  width: 200px;
+}
+
+.nav-links-mobile.active {
+  display: block;
+  padding: 20px;
+}
+
+.nav-links-mobile ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.nav-links-mobile li {
+  padding: 10px;
+  border-bottom: 1px solid #333;
+}
+
+.nav-links-mobile li:last-child {
+  border-bottom: none;
+}
+
+.nav-links-mobile a {
+  color: #a1a1aa;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nav-links-mobile a:hover {
+  color: #1e90ff; /* Light blue hover effect */
+}
+
+/* Responsive Styles for Header */
+@media (max-width: 768px) {
+  .header {
+    grid-template-columns: 1fr auto;
+    padding: 10px 20px;
+  }
+
+  .header-center {
+    display: none;
+  }
+
+  .header-right {
+    gap: 8px; /* Smaller gap for mobile */
+  }
+
+  .menu-toggle {
+    display: block; /* Show hamburger menu */
+  }
+
+  .theme-btn {
+    padding: 8px 16px; /* Smaller button on mobile */
+  }
+}

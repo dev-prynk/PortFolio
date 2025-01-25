@@ -1,0 +1,271 @@
+/* HeroSection.css */
+.hero-section {    
+    color: #fff; /* White text color */
+    padding: 10px 0; /* Space around the section */
+}
+
+.profile {
+    background-color: #121214; /* Dark background color */
+    border-radius: 20px;
+    margin: 10px;
+    text-align: center;
+    padding: 20px;    
+}
+
+.profile-img-container {
+    width: 160px; /* Fixed size for the container */
+    height: 160px; /* Fixed size for the container */
+    border-radius: 50%; /* Make it round */
+    overflow: hidden; /* Ensures the image doesn't overflow */
+    border: 5px solid #fff; /* White border around the container */
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.profile-img {
+    width: 100%; /* Fill the container */
+    height: 100%; /* Fill the container */
+    object-fit: cover; /* Ensures the image covers the area */
+}
+
+.profile h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.profile p {
+    font-size: 16px;
+    color: #ccc; /* Light gray text */
+}
+
+.details {
+    background-color: #121214; /* Dark background color */
+    border-radius: 20px;
+    margin: 10px;
+    text-align: left;
+    padding: 20px;
+}
+
+.details h3 {
+    font-size: 18px;
+    color: #a1a1aa; /* Blue color for the subheading */
+}
+
+.details h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.download-cv {
+  background: linear-gradient(to right, #6366f1, #ec4899, #a855f7); /* Gradient background */
+  color: #fff;
+  margin-top: 15px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease; /* Add transition for smooth scaling */
+  text-align: center; /* Center the text */
+}
+
+.download-cv:hover {
+  background: linear-gradient(to right, #6366f1, #ec4899, #a855f7); /* Keep the gradient on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+  .cv-link {
+    color: inherit; /* Inherit text color from the button */
+    text-decoration: none; /* Remove underline */
+    font-family: 'Lexend', sans-serif; /* Use Lexend font */
+  }
+/* Social Media Icons */
+.social-icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px; /* Space between icons */
+    margin-top: 20px;
+    justify-items: center; /* Center the icons horizontally */
+  }
+  
+  .social-icons a {
+    color: #fff;
+    font-size: 24px;
+    display: inline-block;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #19191a; /* Change color on hover */
+  }
+  
+  .hero-section .theme-btn {
+    font-family: 'Lexend', sans-serif;
+    background: transparent; /* Transparent background */
+    color: #fff; /* White text */
+    cursor: pointer;
+    display: inline-block;
+    border: 1px solid rgb(139, 137, 137); /* Transparent border initially */
+    border-radius: 15px; /* Rounded corners */
+    padding: 12px 24px;
+    text-transform: none;
+    line-height: 20px;
+    overflow: visible;
+    transition: .3s;
+    position: relative;
+    z-index: 1; /* Ensure text is above the pseudo-element */
+  }
+  
+  /* Gradient border effect using the pseudo-element */
+  .hero-section .theme-btn::before {
+    position: absolute;
+    border-radius: 15px; /* Matching the button's rounded corners */
+    background: transparent; /* Gradient border */
+    z-index: -1; /* Behind the button text */
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover effects */
+  .hero-section .theme-btn:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    background: linear-gradient(to right, #6366f1, #ec4899, #a855f7);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Add shadow for emphasis */
+    border: none;
+  }
+  
+  .hero-section .theme-btn:hover::before {
+    transform: scale(1.1); /* Slight zoom effect on the gradient */
+  }
+
+  .hero-section-containers {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row; /* Arrange in a row by default */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+    gap: 20px; /* Space between columns */
+  }
+  
+  /* Scrolling Logos with Mask Effect */
+
+  .skills {
+    margin: 10px;
+    margin-top: 20px;
+    height: 115px; /* Matches the height of the profile container */
+    background-color: #121214; /* Dark background */    
+    align-items: center;
+    overflow: hidden; /* Hide overflowing logos */
+    border-radius: 20px;
+  }
+
+ /* Scrolling Logos Section */
+.scrolling-logos {
+    height: 80px; /* Matches the profile container height */
+    background-color: #121214; /* Dark background */
+    display: flex;
+    align-items: center;
+    overflow: hidden; /* Hide overflow */
+    border-radius: 20px;
+    padding: 1rem; /* Padding for spacing */
+    mask-image: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+    -webkit-mask-image: linear-gradient(90deg, transparent, white 20%, white 80%, transparent); /* Compatibility */
+  }
+  
+  .logos {
+    display: flex;
+    gap: 5rem; /* Space between logos */
+    animation: scroll-left 30s linear infinite; /* Infinite scrolling */
+    align-items: center; /* Center logos vertically */
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5)); /* Add shadow for emphasis */
+    transition: filter 0.3s ease; /* Smooth transition effect */ 
+  }
+  
+  .logo {
+    max-height: 80px; /* Ensures logos do not exceed 80px in height */
+    max-width: 120px; /* Optional: Limits the maximum width */
+    height: auto; /* Adjust height while maintaining aspect ratio */
+    width: auto; /* Adjust width while maintaining aspect ratio */
+    object-fit: contain; /* Ensures the logo fits within the bounds without distortion */
+    filter: grayscale(1); /* Optional: Grayscale effect */
+    transition: filter 0.3s ease; /* Hover effect */
+  }
+  
+  .logo:hover { 
+    filter: grayscale(0); /* Remove grayscale on hover */
+  }
+  
+  /* Scrolling Animation */
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%); /* Move by half the width to loop */
+    }
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .hero-section {
+      padding: 10px;
+    }
+  
+    .profile,
+    .details {
+      margin: 5px;
+      padding: 15px;
+      flex: 1; /* Ensure equal width */
+    }
+  
+    .details {
+      text-align: left; /* Keep text aligned to the left */
+    }
+  
+    .hero-section-containers {
+      display: flex; /* Use flexbox for horizontal layout */
+      flex-direction: row; /* Arrange sections horizontally */
+      flex-wrap: wrap; /* Wrap sections on smaller screens */
+      gap: 10px; /* Add space between sections */
+      align-items: center; /* Center items vertically */
+    }
+  
+    .details {
+      flex-basis: 60%; /* Details section takes 60% width */
+    }
+  
+    .profile {
+      flex-basis: 40%; /* Profile section takes 40% width */
+    }
+  
+    .scrolling-logos {
+      margin-top: 10px;
+    }
+  
+    .details h1 {
+      font-size: 24px; /* Adjust text size */
+    }
+  
+    .profile h2 {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-section .row {
+      flex-direction: column; /* Stack sections vertically on very small screens */
+    }
+  
+    .details {
+      flex-basis: 100%; /* Details section takes full width */
+    }
+  
+    .profile {
+      flex-basis: 100%; /* Profile section takes full width */
+    }
+  
+    .scrolling-logos {
+      height: auto;
+    }
+  }
+  

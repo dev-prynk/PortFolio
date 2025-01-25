@@ -1,0 +1,59 @@
+.footer-container {
+    background-color: #121214; /* Dark background color */
+    border-radius: 20px;
+    margin: 10px;
+    text-align: center;
+    padding: 20px; 
+    font-family: 'Lexend', sans-serif; /* Use Lexend font */
+}
+
+.tagline {
+    padding: 0px 200px; /* Default padding for larger screens */
+}
+
+.tagline h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.tagline p {
+    color: #d1d5db;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .tagline {
+        padding: 0px 100px; /* Reduce padding for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .tagline {
+        padding: 0px 50px; /* Further reduce padding for smaller screens */
+    }
+    
+    .tagline h2 {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+    
+    .tagline p {
+        font-size: 0.9rem; /* Slightly reduce paragraph text size */
+    }
+}
+
+@media (max-width: 480px) {
+    .tagline {
+        padding: 0px 20px; /* Minimal padding for very small screens */
+    }
+
+    .tagline h2 {
+        font-size: 1.25rem; /* Smaller heading size for mobile */
+    }
+
+    .tagline p {
+        font-size: 0.85rem; /* Smaller paragraph size for mobile */
+    }
+}

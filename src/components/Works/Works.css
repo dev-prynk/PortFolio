@@ -1,0 +1,116 @@
+/* Overall Section Styling */
+.works-section {
+  font-family: 'Lexend', sans-serif; /* Use Lexend font */
+  background-color: #121214;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 15px;
+  margin: 10px;
+}
+
+.works-header {
+  margin-bottom: 40px;
+}                     
+
+.works-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.works-subtitle {
+  color: #9f9f9f;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+/* Grid Layout */
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* Work Card */
+.work-card {
+  background-color: #1b1b1e;
+  border: 1px solid #333;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Image Container */
+.work-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.work-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.work-card:hover .work-image {
+  transform: scale(1.1);
+}
+
+.view-project-btn {
+  padding: 10px 20px;
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-project-btn:hover {
+  background-color: #005fbb;
+}
+
+/* Content Section */
+.work-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.work-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1e90ff;
+  margin-bottom: 10px;
+}
+
+.work-description {
+  color: #ccc;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+/* Tags */
+.work-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.work-tag {
+  background-color: #1e1e24;
+  color: #1e90ff;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}

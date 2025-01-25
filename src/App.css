@@ -1,0 +1,38 @@
+/* App.css */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #000000; /* Background color for contrast */
+  font-family: Arial, sans-serif; /* Optional font choice */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.centered-container {
+  width: 100%; /* Full width to make it responsive */
+  max-width: 1280px; /* Maximum width for the content */
+  margin: 0 auto; /* Centers the container horizontally */  
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, #6366f1, #ec4899, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  color: #b3b3b3;
+  line-height: 1.6;
+}
+
+hr {
+  border: 1px solid #000000; /* Black color */
+  width: 80%; /* Adjust the width as needed */
+  margin: 5px auto; /* Center and add space around the hr */
+}

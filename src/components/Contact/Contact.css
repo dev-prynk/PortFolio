@@ -1,0 +1,92 @@
+.contact-container {
+    background-color: #121214; /* Dark background color */
+    border-radius: 20px;
+    margin: 10px;
+    padding: 40px;
+    text-align: center;
+    font-family: 'Lexend', sans-serif; /* Use Lexend font */
+  }
+  
+  .contact-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ec4899; /* Gradient color */
+    background: linear-gradient(to right, #6366f1, #ec4899, #a855f7);
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 15px;
+  }
+  
+  .contact-header p {
+    color: #9ca3af;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    font-size: 1rem;
+    color: #d1d5db;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input,
+  .input-group textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid #333;
+    background-color: #18181b;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    margin-top: 5px;
+  }
+  
+  .input-group input:focus,
+  .input-group textarea:focus {
+    border-color: #6366f1;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  /* Flexbox for Name and Email Inputs side by side */
+  .input-group-horizontal {
+    display: flex;
+    gap: 50px;
+  }
+  
+  .input-group-horizontal .input-group {
+    flex: 1;
+  }
+  
+  /* Send Button */
+  .send-button {
+    font-family: 'Lexend', sans-serif; /* Use Lexend font */
+    width: 100%;
+    padding: 1rem 2rem;
+    border-radius: 1.5rem;
+    background: linear-gradient(to right, #6366f1, #f472b6, #7e22ce);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    border: none;
+  }
+  
+  .send-button:hover {
+    opacity: 0.9;
+  }
+  
