@@ -32,7 +32,7 @@ const HeroSection = () => {
 
             <button className="download-cv">
               <a
-                href="/assets/pdf/Priyank_Suthar.pdf"
+                href="/public/assets/pdf/Priyank_Suthar.pdf"
                 download="Priyank_Suthar.pdf"
                 className="cv-link"
               >
@@ -53,72 +53,72 @@ const HeroSection = () => {
               <div className="logos">
                 {/* Repeated Logos */}
                 <img
-                  src="/assets/svg/mongodb-svgrepo-com.svg"
+                  src="/public/assets/svg/mongodb-svgrepo-com.svg"
                   alt="MongoDB"
                   className="logo"
                 />
                 <img
-                  src="/assets/svg/reactjs-fill-svgrepo-com.svg"
+                  src="/public/assets/svg/reactjs-fill-svgrepo-com.svg"
                   alt="ReactJS"
                   className="logo"
                 />
                 <img
-                  src="/assets/svg/python-svg.svg"
+                  src="/public/assets/svg/python-svg.svg"
                   alt="Python"
                   className="logo"
                 />
                 <img
-                  src="/assets/svg/aws-svgrepo-com.svg"
+                  src="/public/assets/svg/aws-svgrepo-com.svg"
                   alt="AWS"
                   className="logo"
                 />
                 <img
-                  src="/assets/svg/sql-file-format-svgrepo-com.svg"
+                  src="/public/assets/svg/sql-file-format-svgrepo-com.svg"
                   alt="SQL"
                   className="logo"
                 />
                 <img
-                  src="/assets/svg/postman-svgrepo-com.svg"
+                  src="/public/assets/svg/postman-svgrepo-com.svg"
                   alt="POSTMAN"
                   className="logo"
                 />
                 <img
-                  src="/assets/svg/github-142-svgrepo-com.svg"
+                  src="/public/assets/svg/github-142-svgrepo-com.svg"
                   alt="GITHUB"
                   className="logo"
                 />
                 <img
-                  src="/assets/svg/mongodb-svgrepo-com.svg"
+                  src="/public/assets/svg/mongodb-svgrepo-com.svg"
                   alt="MongoDB"
                   className="logo"
                 />
                 <img
-                  src="/assets/svg/reactjs-fill-svgrepo-com.svg"
+                  src="/public/assets/svg/reactjs-fill-svgrepo-com.svg"
                   alt="ReactJS"
                   className="logo"
                 />
                 <img
-                  src="/assets/svg/python-svg.svg"
+                  src="/public/assets/svg/python-svg.svg"
                   alt="Python"
                   className="logo"
                 />
                 <img
-                  src="/assets/svg/aws-svgrepo-com.svg"
+                  src="/public/assets/svg/aws-svgrepo-com.svg"
                   alt="AWS"
                   className="logo"
                 />
                 <img
-                  src="/assets/svg/sql-file-format-svgrepo-com.svg"
+                  src="/public/assets/svg/sql-file-format-svgrepo-com.svg"
                   alt="SQL"
                   className="logo"
                 />
                 <img
-                  src="/assets/svg/postman-svgrepo-com.svg"
+                  src="/public/assets/svg/postman-svgrepo-com.svg"
                   alt="POSTMAN"
                   className="logo"
                 />
                 <img
-                  src="/assets/svg/github-142-svgrepo-com.svg"
+                  src="/public/assets/svg/github-142-svgrepo-com.svg"
                   alt="GITHUB"
                   className="logo"
                 />
